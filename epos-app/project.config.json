@@ -1,0 +1,103 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.1",
+	"appid": "wxfd71e2bc6236552e",
+	"projectname": "wxStore-app",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 6,
+			"list": [
+				{
+					"id": -1,
+					"name": "classify",
+					"pathName": "webapp/pages/classify/classify",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "shopcar",
+					"pathName": "webapp/pages/shopcar/shopcar",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "webapp/pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "goodsdetail",
+					"pathName": "webapp/pages/goodsdetail/detail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "community",
+					"pathName": "webapp/pages/position/community",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "orderlist",
+					"pathName": "webapp/pages/my/order/orderlist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "orderdetail",
+					"pathName": "webapp/pages/my/order/orderdetail",
+					"scene": null
+				}
+			]
+		}
+	}
+}

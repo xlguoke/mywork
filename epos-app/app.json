@@ -1,0 +1,13 @@
+{
+    "pages": [
+        "pages/views/index/index",
+        "pages/logs/logs"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#F75451",
+        "navigationBarTitleText": "epos",
+        "navigationBarTextStyle": "white"
+    },
+    "sitemapLocation": "sitemap.json"
+}
