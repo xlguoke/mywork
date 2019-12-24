@@ -1,1 +1,20 @@
 /**app.wxss**/
+
+page {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.active {
+  color: #74e4f3;
+}
+
+.bg {
+  background-color: #74e4f3;
+}
