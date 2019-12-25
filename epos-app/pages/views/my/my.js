@@ -1,11 +1,38 @@
 // pages/views/my/my.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    menuList: [
+      {
+        url: '',
+        title: '我的订单',
+        icon: '/pages/images/icon-order.png'
+      },
+      {
+        url: '',
+        title: '预约订单',
+        icon: '/pages/images/icon-yuyue.png'
+      },
+      {
+        url: '',
+        title: '消费明细',
+        icon: '/pages/images/icon-detail.png'
+      },
+      {
+        url: '',
+        title: '地址管理',
+        icon: '/pages/images/icon-address.png'
+      },
+      {
+        url: '',
+        title: '修改号码',
+        icon: '/pages/images/icon-tel.png'
+      },
+      {
+        url: '',
+        title: '用户协议',
+        icon: '/pages/images/icon-agreement.png'
+      }
+    ]
   },
 
   /**

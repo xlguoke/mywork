@@ -1,1 +1,11 @@
 /* pages/views/shop/shop.wxss */
+.no-shop {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-shop image {
+    width: 60%;
+}

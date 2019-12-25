@@ -1,6 +1,98 @@
 <!--webapp/pages/index/index.wxml-->
-
-<view>
-    首页 32456
-
+<view class="container">
+	<view class="head-swiper bg-w mb">
+		<swiper autoplay circular indicatorDots class="swiper-content" duration="400" indicatorActiveColor="#FF5344" indicatorColor="#E7E9E7" interval="5000" nextMargin="30rpx" previousMargin="30rpx">
+			<swiper-item wx:for="{{sliderList}}" wx:key="id">
+				<image class='banner-img' src='{{item.image}}'></image>
+			</swiper-item>
+		</swiper>
+	</view>
+	<view class="notice mb bg-w clear">
+		<text class="title fl">店铺公告</text>
+		<swiper class='con fl' autoplay='{{true}}' interval='2000' vertical='{{true}}' circular='{{true}}'>
+			<swiper-item class='f-1' wx:for='{{txtlist}}' wx:key="index">{{item}}</swiper-item>
+		</swiper>
+	</view>
+	<view class="card-list bg-w mb">
+		<view class="card-title">
+			<image src="/pages/images/title-bg-l.png" mode="widthFix"></image>
+			<text class="name red">预约上门</text>
+			<image src="/pages/images/title-bg-r.png" mode="widthFix"></image>
+		</view>
+		<view class="card-con pd">
+			<view class="pick-up">
+				<view class="item bg-no">
+					<image src="/pages/images/icon-dabao.png"></image>
+					<view class="flow">打包待干洗衣物</view>
+				</view>
+				<view class="item bg-no">
+					<image src="/pages/images/icon-kuaidi.png"></image>
+					<view class="flow">收衣员上门取件</view>
+				</view>
+				<view class="item bg-no">
+					<image src="/pages/images/icon-duigou.png"></image>
+					<view class="flow">预约成功</view>
+				</view>
+			</view>
+			<view class="btn-box">
+				<navigator class="pick-up-btn bg-g" url="/pages/views/index/apointment/apointment">立即预约</navigator>
+			</view>
+		</view>
+	</view>
+	<view class="card-list bg-w mb">
+		<view class="card-title">
+			<image src="/pages/images/title-bg-l.png" mode="widthFix"></image>
+			<text class="name red">专业清洗</text>
+			<image src="/pages/images/title-bg-r.png" mode="widthFix"></image>
+		</view>
+		<view class="card-con">
+			<view class="clear clearning-wrap">
+				<navigator class="clear-list fl" url="/">
+					<image class="fl" src="/pages/images/rinse_1.png"></image>
+					<image class="fl" src="/pages/images/rinse_2.png"></image>
+					<image class="fl" src="/pages/images/rinse_3.png"></image>
+					<image class="fl" src="/pages/images/rinse_4.png"></image>
+				</navigator>
+				<navigator class="clear-dabao fl" url="/">
+					<image src="/pages/images/rinse_5.png"></image>
+				</navigator>
+			</view>
+		</view>
+	</view>
+	<view class="card-list bg-w mb">
+		<view class="card-title">
+			<image src="/pages/images/title-bg-l.png" mode="widthFix"></image>
+			<text class="name red">特价专区</text>
+			<image src="/pages/images/title-bg-r.png" mode="widthFix"></image>
+		</view>
+		<view class="card-con pd">
+			
+		</view>
+	</view>
+	<view class="navbar-list bg-w clear">
+		<navigator url="" class="item fl">
+			<view class="img-box">
+				<image src="/pages/images/icon-fuwu.png"></image>
+			</view>
+			<view class="title">服务介绍</view>
+		</navigator>
+        <navigator url="" class="item fl">
+			<view class="img-box">
+				<image src="/pages/images/icon-xiadan.png"></image>
+			</view>
+			<view class="title">如何下单</view>
+		</navigator>
+        <navigator url="" class="item fl">
+			<view class="img-box">
+				<image src="/pages/images/icon-baobiao.png"></image>
+			</view>
+			<view class="title">价目中心</view>
+		</navigator>
+        <navigator url="" class="item fl">
+			<view class="img-box">
+				<image src="/pages/images/icon-yijian.png"></image>
+			</view>
+			<view class="title">意见反馈</view>
+		</navigator>
+	</view>
 </view>

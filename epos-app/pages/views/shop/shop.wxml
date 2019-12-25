@@ -1,2 +1,6 @@
 <!--pages/views/shop/shop.wxml-->
-<text>pages/views/shop/shop.wxml</text>
+<view class="container">
+	<view class="no-shop bg-w">
+		<image src="/pages/images/shop.png" mode="widthFix"></image>
+	</view>
+</view>

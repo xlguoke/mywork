@@ -1,2 +1,51 @@
 <!--pages/views/recharge/recharge.wxml-->
-<text>pages/views/recharge/recharge.wxml</text>
+<view class="container">
+	<scroll-view style="height:calc(100% - 90rpx)">
+		<view class="rlist bg-w pd-lf mb">
+			<view class="r-title clear">
+				<view class="member-card fl">会员卡：</view>
+				<picker bindchange="chooseMemberCard" value="{{memberIndex}}" range="{{chooseMemberCard}}">
+					<view wx:if="{{memberIndex === -1}}" class="member-nothing fl">请选择会员卡</view>
+					<view class="member-item fl" wx:else>
+						{{chooseMemberCard[memberIndex]}}
+					</view>
+				</picker>
+			</view>
+			<view class="r-con pd-tb">
+				<view class="money-list clear">
+					<block wx:for="{{moneyList}}" wx:key="code">
+						<view class="money-item fl green {{moneyIndex==item.code?'bg-g':''}}" data-code="{{item.code}}" bindtap="chooseMoney">
+							<view>充值{{item.price}}元</view>赠送{{item.give}}元
+						</view>
+					</block>
+				</view>
+			</view>
+		</view>
+		<view class="rlist bg-w pd-lf mb">
+			<view class="r-title clear">
+				<text class="fl">当前卡余额</text>
+				<text class="fr">
+                <text class="red">1.00</text> 元
+				</text>
+			</view>
+		</view>
+		<view class="rlist bg-w pd-lf mb">
+			<view class="r-title">
+				选择支付方式
+			</view>
+			<view class="r-con pd-tb">
+				<radio-group bindchange="choosePayType">
+					<view class="pay-type" wx:for="{{payType}}" wx:for-index="index" wx:key="index">
+						<image class="fl" src="{{item.icon}}"></image>
+						<text class="fl">{{item.pay}}</text>
+						<radio class="fr" value="{{index}}"></radio>
+					</view>
+				</radio-group>
+			</view>
+		</view>
+	</scroll-view>
+	<view class="payment-btn bg-w">
+		<view class="fl">合计： <text class="red">￥{{totalMoney}}</text></view>
+		<view class="fr payment bg-g" bindtap="paymentHandler">确认支付</view>
+	</view>
+</view>

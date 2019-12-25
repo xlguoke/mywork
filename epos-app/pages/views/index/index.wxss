@@ -1,1 +1,163 @@
 /* webapp/pages/index/index.wxss */
+.head-swiper {
+    z-index: 100;
+    padding: 30rpx 0;
+    margin-bottom: 20rpx;
+    position: relative;
+}
+
+.swiper-content {
+    width: 100%;
+    height: 260rpx;
+    overflow: hidden;
+}
+
+.swiper-content swiper-item {
+    width: 690rpx;
+    border-radius: 12rpx;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.swiper-content .banner-img {
+    width: 690rpx;
+    height: 280rpx;
+    display: block;
+    border-radius: 12rpx;
+    background: #f9f9f9;
+}
+
+.notice {
+    padding: 10rpx 30rpx;
+}
+
+.notice .title {
+    width: 144rpx;
+    height: 40rpx;
+    margin-top: 10rpx;
+    border-right: 1rpx solid #999;
+    margin-right: 30rpx;
+}
+
+.notice .con {
+    width: calc(100% - 175rpx);
+    height: 60rpx;
+    line-height: 60rpx;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-list .card-title {
+    height: 80rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1rpx solid #eee;
+}
+
+.card-list .card-title image {
+    width: 100rpx;
+}
+
+.card-list .card-title .name {
+    font-size: 34rpx;
+    margin: 0 16rpx;
+}
+
+.pick-up {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pick-up .item {
+    flex: 1;
+    height: auto;
+    text-align: center;
+    position:relative;
+}
+
+.pick-up .item image {
+    width: 100rpx;
+    height: 100rpx;
+}
+
+.pick-up .item:not(:nth-child(3))::after{
+    height:3rpx;
+    width:90rpx;
+    content:'..........';    
+    display:block;
+    position:absolute;
+    right:-34rpx;
+    top:20rpx;
+}
+
+.pick-up .item:not(:nth-child(3))::before{
+    width:10rpx;
+    height:10rpx;
+    content:'';
+    background-color:#999;
+    border-radius:10rpx;
+    position:absolute;
+    right:-46rpx;
+    top:44rpx;
+}
+
+.btn-box{
+    padding:50rpx 20rpx 0;
+}
+
+.pick-up-btn{
+    border-radius:10rpx;
+    height:90rpx;
+    line-height:90rpx;
+    text-align: center;
+    font-size:34rpx;
+}
+.clearning-wrap{
+    height:500rpx;
+    overflow:hidden;
+}
+
+.clear-list{
+    width:55%;
+    height:100%;
+}
+
+.clear-list image{
+    width:50%;
+    height:250rpx;
+}
+
+.clear-dabao{
+    width:45%;
+    height:100%;
+}
+.clear-dabao image{
+    width:100%;
+    height:100%;
+    
+}
+
+.navbar-list .item{
+    width:25%;
+    height:auto;
+    text-align: center;
+    padding:20rpx 0;
+}
+
+.navbar-list .item .img-box{
+    width:80rpx;
+    height:80rpx;
+    border:1rpx solid #ddd;
+    border-radius:16rpx;
+    padding:10rpx;
+    box-sizing:border-box;
+    margin:0 auto;
+} 
+.navbar-list .item .img-box image{
+    width:100%;
+    height:100%;
+} 
+.navbar-list .item .title{
+    line-height:50rpx;
+}   

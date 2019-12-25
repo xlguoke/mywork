@@ -4,17 +4,131 @@ page {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
+  font-size: 30rpx;
+  color: #333;
 }
 
 .container {
-  height: 100%;
+  width: 100%;
+  min-height: 100%;
   box-sizing: border-box;
+  background-color: #f5f5f5;
+  overflow: hidden;
 }
 
-.active {
+.green {
   color: #74e4f3;
 }
 
-.bg {
+.red {
+  color: #fc5f5f;
+}
+
+.bg-w {
+  background-color: #fff;
+}
+
+.bg-no {
+  background-color: transparent;
+}
+
+.bg-g {
   background-color: #74e4f3;
+  color: #fff;
+}
+
+.bg-red {
+  background-color: #fc5f5f;
+  color: #fff;
+}
+
+.mb {
+  margin-bottom: 20rpx;
+}
+
+.mt {
+  margin-top: 20rpx;
+}
+
+.pd {
+  padding: 30rpx;
+  box-sizing:border-box;
+}
+
+.pd-tb {
+  padding: 30rpx 0;
+  box-sizing:border-box;
+}
+
+.pd-lf {
+  padding: 0 30rpx;
+  box-sizing:border-box;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear::after {
+  height: 0;
+  content: '';
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+.f-1 {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+
+
+checkbox .wx-checkbox-input,
+radio .wx-radio-input {
+  border-radius: 50%;
+  /* 圆角 */
+  width: 40rpx;
+  /* 背景的宽 */
+  height: 40rpx;
+  /* 背景的高 */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked,
+radio .wx-radio-input.wx-radio-input-checked {
+  border-color: #ff685d !important;
+  background: #ff685d !important;
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before,
+radio .wx-radio-input.wx-radio-input-checked::before {
+  width: 30rpx;
+  height: 30rpx;
+  border-radius: 50%;
+  line-height: 30rpx;
+  font-size: 30rpx !important;
+  /* 对勾大小 30rpx */
+  color: #fff;
+  /* 对勾颜色 白色 */
+  text-align: center;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+checkbox::before,
+radio::before {
+  right: 2px;
+  font-size: 34rpx;
 }

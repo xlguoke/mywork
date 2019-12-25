@@ -1,16 +1,23 @@
-// webapp/pages/index/index.js
+// pages/views/index/apointment/apointment.js
 Page({
+
+    /**
+     * 页面的初始数据
+     */
     data: {
-        sliderList: [{}, {}, {}],
-        txtlist: [
-            '这是第一条公告内容',
-            '小程序上下滚动效果总结',
-            '这是一行上下滚动的文字，文字最好短点，超过一行省略'
-        ]
+
     },
+
+    /**
+     * 生命周期函数--监听页面加载
+     */
     onLoad: function (options) {
 
     },
+
+    /**
+     * 生命周期函数--监听页面初次渲染完成
+     */
     onReady: function () {
 
     },
