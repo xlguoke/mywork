@@ -47,7 +47,7 @@
 		</view>
 		<view class="card-con">
 			<view class="clear clearning-wrap">
-				<navigator class="clear-list fl" url="/">
+				<navigator class="clear-list fl" url="/pages/views/index/goodsList/goodsList">
 					<image class="fl" src="/pages/images/rinse_1.png"></image>
 					<image class="fl" src="/pages/images/rinse_2.png"></image>
 					<image class="fl" src="/pages/images/rinse_3.png"></image>

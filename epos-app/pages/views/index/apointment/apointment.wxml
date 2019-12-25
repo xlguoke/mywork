@@ -1,2 +1,31 @@
 <!--pages/views/index/apointment/apointment.wxml-->
-<text>pages/views/index/apointment/apointment.wxml</text>
+<view class='container'>
+  <view class='a-list pd-lf bg-w mb'>
+    <view class='a-title'>收衣地址</view>
+    <view class='a-con pd-tb'>
+      <view class='a-address'>
+        <image src='/pages/images/icon-local.png'></image>
+        <input class="address f-1" value='' disabled placeholder='请设置收衣地址'></input>
+        <navigator class="link-address green" url="">地址簿</navigator>
+      </view>
+    </view>
+  </view>
+  <view class='a-list pd-lf bg-w mb'>
+    <view class='a-title'>预约时间</view>
+    <view class='a-con pd-tb'>
+      <view class='a-address'>
+        <image src='/pages/images/icon-local.png'></image>
+        <input class="address f-1" value='' disabled placeholder='请设置预约时间'></input>
+      </view>
+    </view>
+  </view>
+  <view class='a-list pd-lf bg-w mb'>
+    <view class='a-title'>备注说明</view>
+    <view class='a-con pd-tb'>
+      <textarea value='' class='remark' placeholder='如果有问题请备注留言'></textarea>
+    </view>
+  </view>
+  <view class='apointment-btn'>
+    <button type='primary'>立即预约</button>
+  </view>
+</view>

@@ -70,6 +70,13 @@
 					"id": -1,
 					"name": "apointment",
 					"pathName": "pages/views/index/apointment/apointment",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "goodsList",
+					"pathName": "pages/views/index/goodsList/goodsList",
 					"scene": null
 				}
 			]

@@ -76,5 +76,5 @@
     text-align: center;
 }
 .payment-btn .payment:active{
-    opacity:.9;
+    opacity:.7;
 }

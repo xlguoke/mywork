@@ -1,1 +1,61 @@
 /* pages/views/index/apointment/apointment.wxss */
+
+.a-list .a-title {
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.a-list .a-con {
+  border-top: 1rpx solid #eee;
+}
+
+.a-list .a-address {
+  height: 50rpx;
+  line-height: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.a-list .a-address image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+
+.a-list .a-address .address {
+  flex: 1;
+}
+
+.a-list .a-address .link-address {
+  width: 120rpx;
+  text-align: right;
+}
+
+.a-list .remark {
+  height: 150rpx;
+  padding: 0 10rpx;
+}
+
+.apointment-btn {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.apointment-btn button {
+  width: 100%;
+  background-color: #74e4f3;
+  border-radius: 0;
+}
+
+.apointment-btn button::after {
+  border: none;
+}
+
+.apointment-btn button.button-hover {
+  background-color: #74e4f3;
+  opacity: 0.7;
+  color:#fff;
+}

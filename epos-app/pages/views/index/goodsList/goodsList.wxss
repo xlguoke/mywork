@@ -1,0 +1,112 @@
+/* pages/views/index/goodsList/goodsList.wxss */
+
+.container {
+  background-color: #fff;
+}
+
+.tabs-box {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.tabs-box .tabs-item {
+  height: 100%;
+  padding: 0 30rpx;
+  display: inline-block;
+}
+
+.tabs-box .tabs-item text {
+  height: calc(100% - 10rpx);
+  display: inline-block;
+}
+
+.tabs-box .tabs-item.active text {
+  border-bottom: 3rpx solid #fff;
+}
+
+.goods-box {
+  width: 33.333333%;
+  height: auto;
+  text-align: center;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+}
+
+.goods-box:nth-child(3n) {
+  border-right: none;
+}
+
+.goods-box image {
+  width: 200rpx;
+  height: 200rpx;
+}
+
+.goods-box .title {
+  margin: 10rpx 0;
+}
+
+.tabs-con {
+  height: calc(100% - 170rpx);
+  overflow-y: auto;
+}
+
+.btns-box {
+  width: 100%;
+  height: 90rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 -1rpx 5rpx 0 #eee;
+}
+
+.btns-box .car {
+  width: 120rpx;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+
+.btns-box .car image {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 15rpx auto;
+}
+
+.btns-box .car .num {
+  position: absolute;
+  right: 15rpx;
+  top: 8rpx;
+  min-width: 30rpx;
+  height: 30rpx;
+  line-height:30rpx;
+  border-radius: 50%;
+  font-size: 22rpx;
+  padding: 3rpx;
+}
+
+.btns-box .price-box {
+  text-align: right;
+  padding-top: 10rpx;
+  margin-right: 20rpx;
+}
+
+.btns-box .price-box .gray {
+  color: #ccc;
+  font-size: 26rpx;
+}
+
+.submit {
+  width: 220rpx;
+  height: 100%;
+  line-height: 90rpx;
+  text-align: center;
+}
+
+.submit:active {
+  opacity: 0.7;
+}
