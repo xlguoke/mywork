@@ -1,0 +1,45 @@
+<!--pages/views/index/feedback/feedback.wxml-->
+
+<view class="container">
+  <view class="f-list bg-w mb pd">
+    <view class="f-title">
+      联系方式
+    </view>
+    <view class="f-con">
+      <view class="f-form">
+        <text class="dot red">*</text>
+        <text class="label">您的名字</text>
+        <input class="value" value="{{name}}" data-name="name" bindinput="changeVal" placeholder="请输入您的名字"></input>
+      </view>
+      <view class="f-form">
+        <text class="dot red">*</text>
+        <text class="label">手机号码</text>
+        <input class="value" value="{{phone}}" data-name="phone" bindinput="changeVal" placeholder="请输入电话"></input>
+      </view>
+    </view>
+  </view>
+  <view class="f-list bg-w mb pd">
+    <view class="f-title">
+      反馈类型
+    </view>
+    <view class="f-con clear">
+      <block wx:for="{{feedBackTypes}}" wx:key="code">
+        <view class="type-item fl {{selectedType==item.code?'active':''}}" data-code="{{item.code}}" bindtap="chooseType">
+          <text>{{item.title}}</text>
+          <image src="/pages/images/icon-selected.png"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="f-list bg-w mb pd">
+    <view class="f-title">
+      反馈内容
+    </view>
+    <view class="f-con clear">
+      <textarea class="textarea" value="{{feedbackContent}}" bindinput="changeVal" data-name="feedbackContent" placeholder="请描述你的问题或建议，我们将尽快优化体验，感谢您的反馈。"></textarea>
+    </view>
+  </view>
+  <view class="feedback-btn pd">
+    <button type="primary" bindtap="submitIdea">提 交</button>
+  </view>
+</view>

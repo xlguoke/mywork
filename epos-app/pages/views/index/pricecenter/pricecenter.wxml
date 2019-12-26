@@ -1,0 +1,16 @@
+<!--pages/views/index/pricecenter/pricecenter.wxml-->
+
+<view class="container">
+    <view class="price-table bg-w m">
+      <view class="row bg-g">
+        <view class="cell">洗衣</view>
+        <view class="cell">价格</view>
+        <view class="cell">洗护周期</view>
+      </view>
+      <view class="row" wx:for="{{dataList}}" wx:key="index">
+        <view class="cell">{{item.title}}</view>
+        <view class="cell">{{item.price}}</view>
+        <view class="cell">{{item.date}}</view>
+      </view>
+    </view>
+</view>

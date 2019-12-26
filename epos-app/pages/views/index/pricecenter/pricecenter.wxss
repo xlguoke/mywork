@@ -1,0 +1,27 @@
+/* pages/views/index/pricecenter/pricecenter.wxss */
+
+.price-table {
+  border-radius: 10rpx;
+  overflow:hidden;
+}
+
+.price-table .row {
+  height: 80rpx;
+  line-height:80rpx;
+  border-bottom: 1rpx solid #eee;
+  display: flex;
+}
+
+.price-table .row:last-child {
+  border-bottom: none;
+}
+.price-table .row .cell{
+  flex:1;
+  height:100%;
+  text-align: center;
+  border-right:1rpx solid #eee;
+}
+
+.price-table .row .cell:last-child{
+  border-right:none;
+}

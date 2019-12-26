@@ -1,0 +1,3 @@
+<!--pages/views/index/howorder/howorder.wxml-->
+
+<image style="width:100%" src="/pages/images/howorder.jpg" mode="widthFix"></image>

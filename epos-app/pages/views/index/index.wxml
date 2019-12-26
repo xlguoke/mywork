@@ -1,7 +1,7 @@
 <!--webapp/pages/index/index.wxml-->
 <view class="container">
 	<view class="head-swiper bg-w mb">
-		<swiper autoplay circular indicatorDots class="swiper-content" duration="400" indicatorActiveColor="#FF5344" indicatorColor="#E7E9E7" interval="5000" nextMargin="30rpx" previousMargin="30rpx">
+		<swiper autoplay circular indicatorDots class="swiper-content" duration="400" indicatorActiveColor="#aaa" indicatorColor="#E7E9E7" interval="5000">
 			<swiper-item wx:for="{{sliderList}}" wx:key="id">
 				<image class='banner-img' src='{{item.image}}'></image>
 			</swiper-item>
@@ -70,25 +70,25 @@
 		</view>
 	</view>
 	<view class="navbar-list bg-w clear">
-		<navigator url="" class="item fl">
+		<navigator url="/pages/views/index/service/service" class="item fl">
 			<view class="img-box">
 				<image src="/pages/images/icon-fuwu.png"></image>
 			</view>
 			<view class="title">服务介绍</view>
 		</navigator>
-        <navigator url="" class="item fl">
+        <navigator url="/pages/views/index/howorder/howorder" class="item fl">
 			<view class="img-box">
 				<image src="/pages/images/icon-xiadan.png"></image>
 			</view>
 			<view class="title">如何下单</view>
 		</navigator>
-        <navigator url="" class="item fl">
+        <navigator url="/pages/views/index/pricecenter/pricecenter" class="item fl">
 			<view class="img-box">
 				<image src="/pages/images/icon-baobiao.png"></image>
 			</view>
 			<view class="title">价目中心</view>
 		</navigator>
-        <navigator url="" class="item fl">
+        <navigator url="/pages/views/index/feedback/feedback" class="item fl">
 			<view class="img-box">
 				<image src="/pages/images/icon-yijian.png"></image>
 			</view>

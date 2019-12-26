@@ -1,0 +1,17 @@
+/* pages/views/index/service/service.wxss */
+
+.swipe {
+  width: 100%;
+  height: 100vh;
+}
+
+.swipe-item {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.swipe-item image {
+  width: 100%;
+}

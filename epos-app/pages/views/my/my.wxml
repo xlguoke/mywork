@@ -1,42 +1,42 @@
 <!--pages/views/my/my.wxml-->
 <view class="container">
-	<view class="userinfo bg-g">
-		<view class="user-img">
-			<image src=""></image>
-		</view>
-		<view class="user-bar">
-			<view class="tel">13000000</view>
-			<image src="/pages/images/bar-code.png" mode="widthFix"></image>
-		</view>
-		<view class="user-serve">
-			<image class="kefu" src="/pages/images/icon-kefu.png"></image>
-			<navigator open-type="switchTab" url="/pages/views/recharge/recharge" class="recharge">
-				<image src="/pages/images/icon-recharge.png"></image>
-				<text class="red">充值</text>
-			</navigator>
-		</view>
-	</view>
-	<navigator url="" class="wallet-wrap bg-w mb">
-		<view class="my-wallet fl">
-			<image src="/pages/images/icon-wallet.png"></image>
-			<view>我的钱包</view>
-		</view>
-		<view class="wallet-info fl">
-			<view>
-				<view class="red">0 张</view>
-				会员卡
-			</view>
-			<view>
-				<view class="red">0 元</view>
-				总金额
-			</view>
-		</view>
-	</navigator>
-    <view class="menu-list bg-w">
-        <navigator class="menu-item pd-lf clear" wx:for="{{menuList}}" wx:key="index">
-            <image class="icon fl" src="{{item.icon}}"></image>
-            <text class="fl">{{item.title}}</text>
-            <view class="arrow-r fr"></view>
-        </navigator>
+  <view class="userinfo bg-g">
+    <view class="user-img">
+      <image src=""></image>
     </view>
+    <view class="user-bar">
+      <view class="tel">13000000</view>
+      <image src="/pages/images/bar-code.png" mode="widthFix"></image>
+    </view>
+    <view class="user-serve">
+      <image class="kefu" src="/pages/images/icon-kefu.png"></image>
+      <navigator open-type="switchTab" url="/pages/views/recharge/recharge" class="recharge">
+        <image src="/pages/images/icon-recharge.png"></image>
+        <text class="red">充值</text>
+      </navigator>
+    </view>
+  </view>
+  <navigator url="/pages/views/my/wallet/wallet" class="wallet-wrap bg-w mb">
+    <view class="my-wallet fl">
+      <image src="/pages/images/icon-wallet.png"></image>
+      <view>我的钱包</view>
+    </view>
+    <view class="wallet-info fl">
+      <view>
+        <view class="red">0 张</view>
+        会员卡
+      </view>
+      <view>
+        <view class="red">0 元</view>
+        总金额
+      </view>
+    </view>
+  </navigator>
+  <view class="menu-list bg-w">
+    <navigator class="menu-item pd-lf clear" wx:for="{{menuList}}" wx:key="index" url="{{item.url}}">
+      <image class="icon fl" src="{{item.icon}}"></image>
+      <text class="fl">{{item.title}}</text>
+      <view class="arrow-r fr"></view>
+    </navigator>
+  </view>
 </view>

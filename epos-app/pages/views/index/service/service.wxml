@@ -1,0 +1,9 @@
+<!--pages/views/index/service/service.wxml-->
+
+<view class="container bg-w">
+  <swiper class="swipe" autoplay indicatorDots indicatorActiveColor="#aaa" indicatorColor="#E7E9E7">
+    <swiper-item class="swipe-item" wx:for="{{serviceList}}" wx:key="index">
+      <image src="{{item.img}}" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>

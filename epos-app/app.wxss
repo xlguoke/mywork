@@ -50,6 +50,10 @@ page {
   margin-top: 20rpx;
 }
 
+.m {
+  margin: 30rpx;
+}
+
 .pd {
   padding: 30rpx;
   box-sizing: border-box;
@@ -90,10 +94,7 @@ page {
   text-overflow: ellipsis;
 }
 
-
-
-checkbox .wx-checkbox-input,
-radio .wx-radio-input {
+checkbox .wx-checkbox-input, radio .wx-radio-input {
   border-radius: 50%;
   /* 圆角 */
   width: 40rpx;
@@ -103,6 +104,7 @@ radio .wx-radio-input {
 }
 
 /* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+
 checkbox .wx-checkbox-input.wx-checkbox-input-checked,
 radio .wx-radio-input.wx-radio-input-checked {
   border-color: #ff685d !important;
@@ -127,8 +129,7 @@ radio .wx-radio-input.wx-radio-input-checked::before {
   -webkit-transform: translate(-50%, -50%) scale(1);
 }
 
-checkbox::before,
-radio::before {
+checkbox::before, radio::before {
   right: 2px;
   font-size: 34rpx;
 }
@@ -145,7 +146,7 @@ button::after {
   border: 0;
 }
 
-button[type='primary'].button-hover{
+button[type='primary'].button-hover {
   background: #74e4f3;
-  opacity:.7;
+  opacity: 0.7;
 }

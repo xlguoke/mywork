@@ -1,0 +1,35 @@
+<!--pages/views/my/wallet/wallet.wxml-->
+
+<view class="container">
+  <view class="bg-g balance">
+    <image src="/pages/images/icon-balance.png"></image>
+    <view class="text">
+      <view>余额</view>
+      <view>￥ 543.00</view>
+    </view>
+  </view>
+  <view class="my-card pd">
+    <swiper class="swiper">
+      <swiper-item class="swoper" wx:for="[{},{}]" wx:key="index">
+        <view class="item bg-w">
+          <view class="card-user">
+            <view class="name">测试</view>
+            <view class="phone">13500000000</view>
+          </view>
+          <view class="card-info">
+            <view>余额：
+              <text class="red">500</text>
+            </view>
+            <view>折扣:
+              <text class="red">8折</text>
+            </view>
+            <view>电话：13500000000</view>
+          </view>
+          <view class="bar-code">
+          
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+  </view>
+</view>
