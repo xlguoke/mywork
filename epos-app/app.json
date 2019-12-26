@@ -1,48 +1,52 @@
 {
-  "pages": [
-    "pages/views/index/index",
-    "pages/logs/logs",
-    "pages/views/recharge/recharge",
-    "pages/views/shop/shop",
-    "pages/views/my/my",
-    "pages/views/index/apointment/apointment",
-    "pages/views/index/goodsList/goodsList"
-  ],
-  "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "epos",
-    "navigationBarTextStyle": "black"
-  },
-  "tabBar": {
-    "color": "#666",
-    "selectedColor": "#74e4f3",
-    "list": [
-      {
-        "pagePath": "pages/views/index/index",
-        "text": "首页",
-        "iconPath": "pages/images/nav-home.png",
-        "selectedIconPath": "pages/images/nav-home-active.png"
-      },
-      {
-        "pagePath": "pages/views/recharge/recharge",
-        "text": "在线充值",
-        "iconPath": "pages/images/nav-recharge.png",
-        "selectedIconPath": "pages/images/nav-recharge-active.png"
-      },
-      {
-        "pagePath": "pages/views/shop/shop",
-        "text": "商城",
-        "iconPath": "pages/images/nav-shop.png",
-        "selectedIconPath": "pages/images/nav-shop-active.png"
-      },
-      {
-        "pagePath": "pages/views/my/my",
-        "text": "我的",
-        "iconPath": "pages/images/nav-my.png",
-        "selectedIconPath": "pages/images/nav-my-active.png"
-      }
-    ]
-  },
-  "sitemapLocation": "sitemap.json"
+    "pages": [
+        "pages/views/index/index",
+        "pages/logs/logs",
+        "pages/views/recharge/recharge",
+        "pages/views/shop/shop",
+        "pages/views/my/my",
+        "pages/views/index/apointment/apointment",
+        "pages/views/index/goodsList/goodsList",
+        "pages/views/index/package/package"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "epos",
+        "navigationBarTextStyle": "black"
+    },
+    "usingComponents": {
+        "popup": "/pages/components/popup/popup"
+    },
+    "tabBar": {
+        "color": "#666",
+        "selectedColor": "#74e4f3",
+        "list": [
+            {
+                "pagePath": "pages/views/index/index",
+                "text": "首页",
+                "iconPath": "pages/images/nav-home.png",
+                "selectedIconPath": "pages/images/nav-home-active.png"
+            },
+            {
+                "pagePath": "pages/views/recharge/recharge",
+                "text": "在线充值",
+                "iconPath": "pages/images/nav-recharge.png",
+                "selectedIconPath": "pages/images/nav-recharge-active.png"
+            },
+            {
+                "pagePath": "pages/views/shop/shop",
+                "text": "商城",
+                "iconPath": "pages/images/nav-shop.png",
+                "selectedIconPath": "pages/images/nav-shop-active.png"
+            },
+            {
+                "pagePath": "pages/views/my/my",
+                "text": "我的",
+                "iconPath": "pages/images/nav-my.png",
+                "selectedIconPath": "pages/images/nav-my-active.png"
+            }
+        ]
+    },
+    "sitemapLocation": "sitemap.json"
 }

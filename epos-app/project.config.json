@@ -77,6 +77,13 @@
 					"id": -1,
 					"name": "goodsList",
 					"pathName": "pages/views/index/goodsList/goodsList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "package",
+					"pathName": "pages/views/index/package/package",
 					"scene": null
 				}
 			]

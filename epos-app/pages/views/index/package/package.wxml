@@ -1,0 +1,44 @@
+<!--pages/views/index/package/package.wxml-->
+<view class="container">
+	<scroll-view scroll-y style="height:calc(100% - 90rpx)">
+		<view class="bg-w mb pd package-type">
+			<image src="/pages/images/rinse_5.png" mode="widthFix"></image>
+			<view class="intro">
+				<view class="item">
+					<view class="t">
+						<icon type="success" color="#74e4f3" size="34rpx"></icon>
+						<text>可入袋</text>
+					</view>
+					<view class="b">
+						衬衫、裤子、羽绒服、沙发套等多种衣物
+					</view>
+				</view>
+				<view class="item">
+					<view class="t">
+						<icon type="clear" color="#74e4f3" size="34rpx"></icon>
+						<text>不可入袋</text>
+					</view>
+					<view class="b">
+						真丝类、真皮类、婚纱类、鞋靴类、箱包类
+					</view>
+				</view>
+			</view>
+		</view>
+		<view class="table bg-w mb">
+			<view class="tr">
+				袋子里可以装些什么？
+			</view>
+			<view class="tr">
+				<view class="td">T恤</view>
+				<view class="td">最多装 件</view>
+			</view>
+			<view class="tr">
+				<view class="td">T恤</view>
+				<view class="td">最多装 件</view>
+			</view>
+		</view>
+	</scroll-view>
+	<navigator url="/pages/views/index/apointment/apointment" class="submit-btn">
+		<button type="primary">预约取件</button>
+	</navigator>
+</view>

@@ -1,0 +1,51 @@
+/* pages/components/popup/popup.wxss */
+.popup-bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 33, 33, .6);
+    overflow:hidden;
+}
+
+.popup-wrap {
+    width: 100%;
+    background-color: #fff;
+    border-top-left-radius: 20rpx;
+    border-top-right-radius: 20rpx;
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    transition: .2s;
+}
+
+.popup-wrap.show-con {
+    bottom: 0;
+}
+
+.popup-wrap .popup-header {
+    height: 90rpx;
+    line-height: 90rpx;
+    padding: 0 30rpx;
+    border-bottom: 1rpx solid #f9f9f9;
+    text-align: center;
+}
+
+
+.popup-wrap .popup-header .l-btn {
+    float: left;
+    color: #74e4f3;
+}
+
+.popup-wrap .popup-header .close {
+    width: 34rpx;
+    height: 34rpx;
+    float: right;
+    margin-top: 28rpx;
+}
+
+.popup-wrap .popup-con{
+    height:calc(100% - 90rpx);
+    overflow:auto;
+}

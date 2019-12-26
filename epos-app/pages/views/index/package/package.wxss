@@ -1,0 +1,66 @@
+/* pages/views/index/package/package.wxss */
+.package-type {
+    display: flex;
+    align-items: center;
+}
+
+.package-type>image {
+    width: 45%;
+}
+
+.package-type .intro {
+    border-left: 1rpx solid #999;
+    padding-left: 30rpx;
+}
+
+.package-type .intro .item:not(:last-child) {
+    margin-bottom: 30rpx;
+}
+
+.package-type .intro icon {
+    font-size: 30rpx;
+    vertical-align: sub;
+    margin-right: 10rpx;
+}
+
+.package-type .intro .t {
+    color: #aaa;
+}
+
+.table {
+    width: calc(100% - 60rpx);
+    margin: 0 30rpx;
+    border: 1rpx solid #ccc;
+}
+
+.table .tr {
+    display: flex;
+    min-height: 70rpx;
+    line-height: 70rpx;
+    border-bottom: 1rpx solid #ccc;
+    display: flex;
+    justify-content: center;
+}
+
+.table .tr:last-child {
+    border-bottom: none;
+}
+
+.table .tr .td {
+    height: 100%;
+    text-align: center;
+    border-right: 1rpx solid #ccc;
+    padding: 0 10rpx;
+    flex:1;
+}
+
+.table .tr .td:last-child {
+    border-right: none
+}
+
+.submit-btn{
+    position: fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+}

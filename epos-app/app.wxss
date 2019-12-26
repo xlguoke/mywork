@@ -52,17 +52,17 @@ page {
 
 .pd {
   padding: 30rpx;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 .pd-tb {
   padding: 30rpx 0;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 .pd-lf {
   padding: 0 30rpx;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
 
 .fl {
@@ -131,4 +131,21 @@ checkbox::before,
 radio::before {
   right: 2px;
   font-size: 34rpx;
+}
+
+button[type='primary'] {
+  background-color: #74e4f3;
+}
+
+button {
+  border-radius: 0;
+}
+
+button::after {
+  border: 0;
+}
+
+button[type='primary'].button-hover{
+  background: #74e4f3;
+  opacity:.7;
 }

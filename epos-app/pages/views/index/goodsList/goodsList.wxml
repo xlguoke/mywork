@@ -1,28 +1,67 @@
 <!--pages/views/index/goodsList/goodsList.wxml-->
 <view class="container">
-  <scroll-view scroll-x class="tabs-box bg-g">
-    <block wx:for="{{goodsTypeList}}" wx:for-index="index" wx:key="index">
-      <view class="tabs-item {{activeTabs==index?'active':''}}" data-index="{{index}}" bindtap="changeTabs">
-        <text>{{item.title}}</text>
-      </view>
-    </block>
-  </scroll-view>
-  <view class="tabs-con">
-    <view class="goods-box fl" wx:for="{{goodsList}}" wx:key="id">
-      <image src="{{item.url}}"></image>
-      <view class="title">{{item.title}}</view>
-      <view class="red">￥{{item.price}}</view>
-    </view>
-  </view>
-  <view class="btns-box bg-w">
-    <view class="car fl">
-      <image src="/pages/images/icon-car.png"></image>
-      <text class="num bg-red">10</text>
-    </view>
-    <view class="submit fr bg-g">预约取件</view>
-    <view class="fr price-box">
-      <view class="red">预估价格￥ 0</view>
-      <view class="gray">不含运费</view>
-    </view>
-  </view>
+	<scroll-view scroll-x class="tabs-box bg-g">
+		<block wx:for="{{goodsTypeList}}" wx:for-index="index" wx:key="index">
+			<view class="tabs-item {{activeTabs==index?'active':''}}" data-index="{{index}}" bindtap="changeTabs">
+				<text>{{item.title}}</text>
+			</view>
+		</block>
+	</scroll-view>
+	<view class="tabs-con">
+		<view class="goods-box fl" wx:for="{{goodsList}}" wx:key="id">
+			<image src="{{item.url}}"></image>
+			<view class="title">{{item.title}}</view>
+			<view class="red">￥{{item.price}}</view>
+			<view class="num bg-red" wx:if="{{item.num&&item.num!=0}}">{{item.num}}</view>
+		</view>
+	</view>
+	<view class="btns-box bg-w">
+		<view class="car fl" bindtap="openShopCar">
+			<image src="/pages/images/icon-car.png"></image>
+			<text class="num bg-red">10</text>
+		</view>
+		<view class="submit fr bg-g" bindtap="pickUpSubmit1">预约取件</view>
+		<view class="fr price-box">
+			<view class="red">预估价格￥ 0</view>
+			<view class="gray">不含运费</view>
+		</view>
+	</view>
 </view>
+
+<popup show="{{show}}">
+	<text slot="head-btnL" bindtap="clearShopCar">清空</text>
+	<view slot="content" class="shop-car-con">
+		<view class="shop-goods">
+			<checkbox-group>
+				<block wx:for="{{shopCarGoodsList}}" wx:key="id">
+					<view class="shop-goods-item pd-lf">
+						<checkbox value="{{item.id}}"></checkbox>
+						<image class="goods-img" src="{{item.url}}"></image>
+						<text class="title">{{item.title}}</text>
+						<text class="price red">￥{{item.price}}</text>
+						<view class="set-num">
+							<view class="set-btn">
+								<image src="/pages/images/icon-del.png"></image>
+							</view>
+							<input value="1"></input>
+							<view class="set-btn">
+								<image src="/pages/images/icon-add.png"></image>
+							</view>
+						</view>
+					</view>
+				</block>
+			</checkbox-group>
+		</view>
+		<view class="btns-box bg-w">
+			<view class="car fl">
+				<image src="/pages/images/icon-car.png"></image>
+				<text class="num bg-red">10</text>
+			</view>
+			<view class="submit fr bg-g" bindtap="pickUpSubmit2">预约取件</view>
+			<view class="fr price-box">
+				<view class="red">预估价格￥ 0</view>
+				<view class="gray">不含运费</view>
+			</view>
+		</view>
+	</view>
+</popup>

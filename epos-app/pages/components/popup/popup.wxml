@@ -1,0 +1,16 @@
+<!--pages/components/popup/popup.wxml-->
+
+<view class="popup-bg" wx:if="{{show}}">
+	<view class="popup-wrap {{showCon?'show-con':''}}" style="height:{{height}}">
+		<view class="popup-header">
+			<view class="l-btn">
+				<slot name="head-btnL"></slot>
+			</view>
+			<text class="title">{{title}}</text>
+			<image class="close" src="/pages/images/icon-delete.png" bindtap="closePopup"></image>
+		</view>
+		<view class="popup-con">
+            <slot name="content"></slot>
+		</view>
+	</view>
+</view>

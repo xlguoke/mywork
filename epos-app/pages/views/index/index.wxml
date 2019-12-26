@@ -53,7 +53,7 @@
 					<image class="fl" src="/pages/images/rinse_3.png"></image>
 					<image class="fl" src="/pages/images/rinse_4.png"></image>
 				</navigator>
-				<navigator class="clear-dabao fl" url="/">
+				<navigator class="clear-dabao fl" url="/pages/views/index/package/package">
 					<image src="/pages/images/rinse_5.png"></image>
 				</navigator>
 			</view>
