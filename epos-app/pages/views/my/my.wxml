@@ -13,7 +13,7 @@
       <navigator open-type="switchTab" url="/pages/views/recharge/recharge" class="recharge">
         <image src="/pages/images/icon-recharge.png"></image>
         <text class="red">充值</text>
-      </navigator>
+      </navigator> 
     </view>
   </view>
   <navigator url="/pages/views/my/wallet/wallet" class="wallet-wrap bg-w mb">

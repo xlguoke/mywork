@@ -1,1 +1,3 @@
 /* pages/views/my/makeorder/makeorder.wxss */
+
+@import '../myorder/myorder.wxss';

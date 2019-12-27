@@ -5,7 +5,7 @@
     <view class='a-con pd-tb'>
       <view class='a-address'>
         <image src='/pages/images/icon-local.png'></image>
-        <input class="address f-1" value='' disabled placeholder='请设置收衣地址'></input>
+        <input class="address f-1" value='{{address.address}}' disabled placeholder='请设置收衣地址'></input>
         <navigator class="link-address green" url="/pages/views/addressmgr/address">地址簿</navigator>
       </view>
     </view>

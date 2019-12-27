@@ -1,2 +1,14 @@
 <!--pages/views/my/editphone/editphone.wxml-->
-<text>pages/views/my/editphone/editphone.wxml</text>
+<view class="container">
+    <view class="tel-form pd-lf bg-w">
+        <input value="{{phone}}" data-name="phone" placeholder="新手机号" bindinput="changeVal" class="val"></input>
+    </view>
+    <view class="tel-form pd-lf bg-w">
+        <input value="{{code}}" data-name="code" placeholder="请输入短信验证码" bindinput="changeVal" class="val"></input>
+        <view class="bg-g get-code" bindtap="getCode" wx:if="{{getCode}}">获取验证码</view>
+        <view class="get-code-no bg-gray" wx:else>{{time}}s 后重新获取</view>
+    </view>
+    <view class="pd mt">
+        <button type="primary" bindtap="submitHandler">提 交</button>
+    </view>
+</view>

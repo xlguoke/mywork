@@ -1,1 +1,50 @@
 /* pages/views/my/addresmgr/address.wxss */
+.address-list {
+    height: calc(100vh - 120rpx);
+    overflow-y: auto;
+}
+.address-list .address-item {
+    border-bottom: 1rpx solid #d9d9d9;
+    display: flex;
+    line-height: 40rpx;
+}
+
+.address-item:last-child {
+    border-bottom: none;
+}
+.address-item .address-info {
+    flex: 1;
+    
+}
+.address-item .edit {
+    width: 80rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    border-left: 2rpx solid #999;
+    text-align: right;
+    font-size: 24rpx;
+    color: #3c7cfb;
+    margin-top: 10rpx;
+}
+.address-item .address-info .tel {
+    margin-left: 30rpx;
+}
+.address-item .address-info .address {
+    color: #666;
+    font-size: 24rpx;
+    
+}
+.address-item .address-info .address .default {
+    background-color: #feefef;
+    color: #fc5f5f;
+    padding: 3rpx 8rpx;
+    border-radius: 5rpx;
+    margin-right: 10rpx;
+}
+
+.add-address{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    left:0;
+}

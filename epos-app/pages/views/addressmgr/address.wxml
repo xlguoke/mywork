@@ -1,2 +1,17 @@
-<!--pages/views/my/addresmgr/address.wxml-->
-<text>pages/views/my/addresmgr/address.wxml</text>
+<!--viewages/views/my/addresmgr/address.wxml-->
+<view class="container">
+	<view class="address-list pd-lf bg-w">
+		<view class="address-item pd-tb" wx:for="{{addressList}}" wx:for-index="index" data-index="{{index}}" bindtap="chooseAddress">
+			<view class="address-info">
+				<view>{{item.user}} <text class="tel">{{item.tel}}</text></view>
+				<view class="address"><text wx:if="{{item.default === 'true'}}" class="default">默认</text>{{item.address}}</view>
+			</view>
+			<view class="edit">
+				<navigator url="./add?id={{item.id}}">编辑</navigator>
+			</view>
+		</view>
+	</view>
+	<button class="add-address" type="primary" bindtap="goAdd">
+		新增地址
+	</button>
+</view>

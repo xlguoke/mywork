@@ -1,2 +1,5 @@
 <!--pages/views/my/consumedetail/consume.wxml-->
-<text>pages/views/my/consumedetail/consume.wxml</text>
+
+<view class="container">
+    <text style="line-height:100rpx;color:#999;padding50rpx;">开发中...</text>
+</view>

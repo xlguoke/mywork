@@ -1,0 +1,46 @@
+<!--pages/views/my/orderdetail/detail.wxml-->
+<view class="container">
+	<view class="od-status bg-g pd">
+		<icon type="success" color="#fff" size="40rpx"></icon>
+		<view style="margin-left:20rpx">
+			<view class="status">待支付</view>
+			<view>待支付</view>
+		</view>
+	</view>
+	<view class="card-info bg-w pd mb">
+		<view class="name-tel">张三 <text>13500000000</text></view>
+		<view class="card-no">
+			<text>卡号：84512065</text>
+			<text class="ye">余额： <text class="red">6312.00</text></text>
+			<text>折扣：<text class="red">8.0</text></text>
+		</view>
+		<view class="o-title">订单条形码</view>
+		<view class="bar-code-box">
+
+		</view>
+	</view>
+	<view class="order-goods">
+		<view class="detial bg-w mb" wx:for="{{orderDetail.goodsList}}" wx:key="id">
+			<image class="fl" src="{{item.url}}"></image>
+			<view class="intro">
+				<view>订单时间：{{item.time}}</view>
+				<view>颜色：{{item.color}}</view>
+				<view class="inline">
+					金额：<text class="red">￥{{item.price}}</text>
+					折扣：<text class="red">{{item.dis}}</text>
+				</view>
+				<view>瑕疵：{{item.flaw}}</view>
+			</view>
+		</view>
+	</view>
+	<view class="order-info pd-lf bg-w">
+		<view class="title">订单信息</view>
+		<view class="con pd-tb">
+			<view>订单号：</view>
+			<view>支付方式：</view>
+			<view>下单时间：</view>
+			<view>门店名称：</view>
+			<view>门店电话：</view>
+		</view>
+	</view>
+</view>

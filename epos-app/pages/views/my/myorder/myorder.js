@@ -5,12 +5,47 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    statusList: [
+      {
+        status: 0,
+        name: '全部'
+      },
+      {
+        status: 1,
+        name: '待支付'
+      },
+      {
+        status: 2,
+        name: '待取衣'
+      },
+      {
+        status: 3,
+        name: '已完成'
+      }
+    ],
+    orderList: [{
+      orderNo: 'SDKFJE_FDSKFLEf_ELS',
+      status: '1',
+      statusName: '待支付',
+      url: '/pages/images/rinse_1.png',
+      time: '2019-12-12',
+      price: '66.66'
+    }, {
+      orderNo: 'SDKFJE_FDSKFLEf_ELS',
+      status: '1',
+      statusName: '待支付',
+      url: '/pages/images/rinse_1.png',
+      time: '2019-12-12',
+      price: '66.66'
+    }],
+    showStatus: 0,
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  changeStatus(e) {
+    let i = e.currentTarget.dataset.index;
+    this.setData({
+      showStatus: i
+    })
+  },
   onLoad: function (options) {
 
   },

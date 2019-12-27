@@ -1,66 +1,38 @@
 // pages/views/my/editphone/editphone.js
+const t = 10;
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    time: t,
+    getCode:true
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  changeVal(e) {
+    let label = e.currentTarget.dataset.name,
+      val = e.detail.value;
+    this.setData({
+      [label]: val
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  submitHandler() {
+    let {phone,code}=this.data;
+    console.log(phone,code)
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  getCode() {
+    this.setData({
+      getCode:false
+    })
+    let timer = setInterval(() => {
+      let _t = this.data.time;
+      _t--;
+      if (_t < 0) {
+        clearInterval(timer)
+        _t = t
+        this.setData({
+          getCode:true
+        })
+      }
+      this.setData({
+        time: _t
+      })
+    }, 1000)
   }
 })

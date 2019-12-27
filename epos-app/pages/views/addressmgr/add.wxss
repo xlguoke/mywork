@@ -1,0 +1,26 @@
+/* pages/views/addressmgr/add.wxss */
+.form-item {
+    height: 90rpx;
+    border-bottom: 1rpx solid #eee;
+    display: flex;
+    align-items: center;
+}
+
+.form-item .label {
+    width: 140rpx;
+}
+
+.form-item .val {
+    flex: 1;
+    height: 100%;
+}
+
+.form-item .val .switch{
+    transform: scale(.7);
+    margin-top:6rpx;
+    margin-right:-30rpx;
+}
+
+.save-address{
+    border-radius:14rpx;
+}

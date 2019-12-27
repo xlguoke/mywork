@@ -100,15 +100,15 @@
 }
 
 .menu-item {
-    height: 80rpx;
-    line-height: 80rpx;
+    height: 90rpx;
+    line-height: 90rpx;
 }
 
 .menu-item .icon {
     width: 30rpx;
     height: 30rpx;
     margin-right:10rpx;
-    margin-top:28rpx;
+    margin-top:32rpx;
 }
 
 .menu-item .arrow-r {
@@ -117,5 +117,5 @@
     border-right: 1rpx solid #ccc;
     border-top: 1rpx solid #ccc;
     transform: rotate(45deg);
-    margin-top:34rpx;
+    margin-top:36rpx;
 }

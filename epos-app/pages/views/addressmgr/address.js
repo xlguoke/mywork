@@ -1,66 +1,42 @@
 // pages/views/my/addresmgr/address.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    addressList: [
+      {
+        user: '张三',
+        tel: '13546312452',
+        address: '重庆市江北区观音桥街道',
+        default: 'true',
+        id: '1'
+      },
+      {
+        user: '张三',
+        tel: '13546312452',
+        address: '重庆市江北区观音桥街道',
+        default: 'false',
+        id: '2'
+      }
+    ],
+    choose: ''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
 
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  goAdd() {
+    wx.navigateTo({
+      url: './add',
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
+  chooseAddress(e) {
+    let _i = e.currentTarget.dataset.index;
+    let address = this.data.addressList[_i];
+    let pages = getCurrentPages();
+    if (pages.length > 1) {
+      var prePage = pages[pages.length - 2]; // 获取上一页
+      if (prePage.getAddress) {
+        prePage.getAddress(address)
+        wx.navigateBack()
+      }
+    }
   }
 })

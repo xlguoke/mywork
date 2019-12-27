@@ -1,24 +1,32 @@
-// pages/views/index/apointment/apointment.js
+// pages/views/addressmgr/add.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        address:{}
+        name: '',
+        phone: '',
+        address: '',
+        default: false
     },
-    getAddress(data){
-        if(data){
-            this.setData({
-                address:data
-            })
-        }
+    saveAddress() {
+        console.log(this.data)
     },
-    /**
-     * 生命周期函数--监听页面加载
-     */
+    inputVal(e) {
+        let label = e.currentTarget.dataset.name,
+            val = e.detail.value;
+        this.setData({
+            [label]: val
+        })
+    },
+    changeDefault(e) {
+        this.setData({
+            default: e.detail.value
+        })
+    },
     onLoad: function (options) {
-
+        console.log(options)
     },
 
     /**

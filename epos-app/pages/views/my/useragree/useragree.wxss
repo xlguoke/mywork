@@ -1,1 +1,24 @@
 /* pages/views/my/useragree/useragree.wxss */
+.h3 {
+    font-size: 36rpx;
+    font-weight: bold;
+    line-height: 70rpx;
+}
+
+.h4 {
+    font-size: 30rpx;
+    font-weight: bold;
+    line-height: 60rpx;
+}
+
+.con-txt {
+    text-indent: 60rpx;
+    line-height: 50rpx;
+}
+
+.center{
+    text-align: center;
+}
+.bold{
+    font-weight:bold;
+}

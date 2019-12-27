@@ -1,1 +1,74 @@
 /* pages/views/my/myorder/myorder.wxss */
+.order-status {
+    width: 100%;
+    height: 80rpx;
+    line-height: 80rpx;
+    overflow-x: scroll;
+    white-space: nowrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-status .item {
+    height: 100%;
+    padding: 0 20rpx;
+    text-align: center;
+    flex: 1;
+}
+
+.order-status .item>text {
+    height: 74rpx;
+    display: inline-block;
+    border-bottom: 3rpx solid #fff;
+}
+
+.order-status .item.active>text {
+    color: #74e4f3;
+    border-color: #74e4f3;
+}
+
+.order-item {
+    border-radius: 14rpx;
+    padding: 0 16rpx;
+}
+
+.order-item .head {
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+.order-item .con {
+    padding: 10rpx 0;
+}
+
+.order-item .con .goods-img {
+    width: 160rpx;
+    height: 200rpx;
+    overflow: hidden;
+    margin-right: 10rpx;
+}
+
+.order-item .con .goods-img image {
+    width: 100%;
+    display: inline-block;
+    line-height: 200rpx;
+}
+
+.order-item .con .order-info {
+    margin-left: 170rpx;
+    height: 100%;
+    color: #aaa;
+}
+
+.order-item .con .order-info .txt {
+    line-height: 56rpx;
+}
+
+.order-item .con .order-info .order-detial {
+    display: inline-block;
+    width: auto;
+    padding: 10rpx 20rpx;
+    border-radius: 30rpx;
+    border: 1rpx solid #eee;
+}

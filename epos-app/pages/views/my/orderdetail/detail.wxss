@@ -1,0 +1,72 @@
+/* pages/views/my/orderdetail/detail.wxss */
+.od-status {
+    height: 120rpx;
+    display: flex;
+    align-items: center;
+}
+
+.od-status .status {
+    font-size: 32rpx;
+    margin-bottom: 10rpx;
+}
+
+.card-info .name-tel {
+    line-height: 50rpx;
+}
+
+.card-info .card-no {
+    line-height: 50rpx;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-info .card-no .ye {
+    border-left: 1rpx solid #eee;
+    border-right: 1rpx solid #eee;
+    padding: 0 50rpx;
+}
+
+.card-info .o-title {
+    text-align: center;
+    font-size: 26rpx;
+    color: #999;
+    line-height: 40rpx;
+}
+
+.card-info .bar-code-box {
+    height: 100rpx;
+    background: #eee;
+    margin-top: 10rpx;
+}
+
+.order-goods .detial {
+    padding: 20rpx;
+}
+
+.order-goods .detial image {
+    width: 180rpx;
+    height: 180rpx;
+}
+
+.order-goods .detial .intro {
+    margin-left: 200rpx;
+    height: 180rpx;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.order-goods .detial .inline text {
+    margin-right: 40rpx;
+}
+
+.order-info .title {
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #eee;
+}
+
+.order-info .con {
+    line-height: 50rpx;
+    color: #aaa;
+}

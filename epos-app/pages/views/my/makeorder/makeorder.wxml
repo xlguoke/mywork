@@ -1,2 +1,32 @@
 <!--pages/views/my/makeorder/makeorder.wxml-->
-<text>pages/views/my/makeorder/makeorder.wxml</text>
+<view class="container">
+	<view class="order-status bg-w">
+		<block wx:for="{{statusList}}" wx:for-index="index" wx:key="id">
+			<view class="item {{showStatus==index?'active':''}}" data-index="{{index}}" bindtap="changeStatus">
+				<text>{{item.name}}</text>
+			</view>
+		</block>
+	</view>
+	<view class="order-list pd">
+		<block wx:for="{{orderList}}" wx:key="id">
+			<view class="order-item bg-w mb">
+				<view class="head">
+					<text class="fl">订单号：{{item.orderNo}}</text>
+					<text class="fr red">{{item.statusName}}</text>
+				</view>
+				<view class="con">
+					<view class="goods-img fl">
+						<image src="{{item.url}}" mode="widthFix"></image>
+					</view>
+					<view class="order-info">
+						<view class="txt">订单时间：{{item.time}}</view>
+						<view class="txt">金额：{{item.price}}</view>
+						<view class="btns mt clear">
+							<navigator url="/pages/views/my/orderdetail/detail?id={{item.orderNo}}" class="order-detial fr">订单详情</navigator>
+						</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</view>

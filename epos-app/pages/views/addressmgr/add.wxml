@@ -1,0 +1,24 @@
+<!--pages/views/addressmgr/add.wxml-->
+<view class="container bg-w">
+	<view class="form-item pd-lf">
+		<text class="label">姓名</text>
+		<input class="val" data-name="name" value="{{name}}" bindinput="inputVal" placeholder="请输入姓名"></input>
+	</view>
+	<view class="form-item pd-lf">
+		<text class="label">电话</text>
+		<input class="val" data-name="phone" value="{{phone}}" bindinput="inputVal" placeholder="请输入电话"></input>
+	</view>
+	<view class="form-item pd-lf">
+		<text class="label">详细地址</text>
+		<input class="val" data-name="address" value="{{address}}" bindinput="inputVal" placeholder="请输入详细地址"></input>
+	</view>
+	<view class="form-item pd-lf">
+		<text class="label">设为默认</text>
+		<view class="val">
+			<switch bindchange="changeDefault" class="fr switch" color="#74e4f3"></switch>
+		</view>
+	</view>
+    <view class="pd mt">
+        <button class="save-address" type="primary" bindtap="saveAddress">保存</button>
+    </view>
+</view>
