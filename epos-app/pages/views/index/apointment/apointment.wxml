@@ -9,13 +9,13 @@
         <navigator class="link-address green" url="/pages/views/addressmgr/address">地址簿</navigator>
       </view>
     </view>
-  </view>
+  </view> 
   <view class='a-list pd-lf bg-w mb'>
     <view class='a-title'>预约时间</view>
     <view class='a-con pd-tb'>
       <view class='a-address'>
         <image src='/pages/images/icon-local.png'></image>
-        <input class="address f-1" value='' disabled placeholder='请设置预约时间'></input>
+        <input class="address f-1" value='' bindtap="openDatePopup" disabled placeholder='请设置预约时间'></input>
       </view>
     </view>
   </view>
@@ -29,3 +29,16 @@
     <button type='primary'>立即预约</button>
   </view>
 </view>
+
+<popup show="{{showDateModel}}" title="预约时间">
+  <view slot="content">
+    <view class="day">
+      <view class="day-item">今天</view>
+      <view class="day-item">明天</view>
+      <view class="day-item">后天</view>
+    </view>
+    <view class="date">
+    
+    </view>
+  </view>
+</popup>
