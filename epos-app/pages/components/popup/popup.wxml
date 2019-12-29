@@ -1,6 +1,6 @@
 <!--pages/components/popup/popup.wxml-->
 
-<view class="popup-bg" wx:if="{{show}}">
+<view class="popup-bg" wx:if="{{showBg}}">
 	<view class="popup-wrap {{showCon?'show-con':''}}" style="height:{{height}}">
 		<view class="popup-header">
 			<view class="l-btn">

@@ -9,19 +9,19 @@
         <navigator class="link-address green" url="/pages/views/addressmgr/address">地址簿</navigator>
       </view>
     </view>
-  </view> 
+  </view>
   <view class='a-list pd-lf bg-w mb'>
     <view class='a-title'>预约时间</view>
     <view class='a-con pd-tb'>
       <view class='a-address'>
-        <image src='/pages/images/icon-local.png'></image>
-        <input class="address f-1" value='' bindtap="openDatePopup" disabled placeholder='请设置预约时间'></input>
+        <image src='/pages/images/icon-shijian.png'></image>
+        <input class="address f-1" value='{{pointTime}}' bindtap="openDatePopup" disabled placeholder='请设置预约时间'></input>
       </view>
     </view>
   </view>
   <view class='a-list pd-lf bg-w mb'>
     <view class='a-title'>备注说明</view>
-    <view class='a-con pd-tb'>
+    <view class='a-con pd-tb' style="display:{{showDateModel?'none':'block'}}">
       <textarea value='' class='remark' placeholder='如果有问题请备注留言'></textarea>
     </view>
   </view>
@@ -30,15 +30,18 @@
   </view>
 </view>
 
-<popup show="{{showDateModel}}" title="预约时间">
-  <view slot="content">
+<popup show="{{showDateModel}}" bind:closeModel="closeModel" title="预约时间">
+  <view slot="content" class="time-wrap">
     <view class="day">
-      <view class="day-item">今天</view>
-      <view class="day-item">明天</view>
-      <view class="day-item">后天</view>
+      <block wx:for="{{dayList}}" wx:key="index">
+        <view class="day-item {{dayIndex==index?'active':''}}" data-date="{{index}}" bindtap="chooseDay">{{item.name}}</view>
+      </block>
     </view>
     <view class="date">
-    
+      <block wx:for="{{timeData}}" wx:key="index">
+        <view class="time-item pd-lf {{hourIndex==index?'active':''}}" data-hour="{{item.date}}" wx:if="{{item.show}}" bindtap="chooseHour">{{item.date}}</view>
+        <view class="time-item pd-lf no-click" data-hour="{{index}}" wx:else>{{item.date}}</view>
+      </block>
     </view>
   </view>
 </popup>

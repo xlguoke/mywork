@@ -1,44 +1,52 @@
 // pages/components/popup/popup.js
 Component({
-    options: {
-        multipleSlots: true
+  options: {
+    multipleSlots: true
+  },
+  properties: {
+    height: {
+      type: String,
+      value: '70%'
     },
-    properties: {
-        height: {
-            type: String,
-            value: '70%'
-        },
-        title: {
-            type: String,
-            value: '价格预估'
-        },
-        show: {
-            type: Boolean,
-            value: false,
-            observer: function (d) {
-                if (d) {
-                    setTimeout(() => {
-                        this.setData({
-                            showCon: true
-                        })
-                    }, 0)
-                }
-            }
-        }
+    title: {
+      type: String,
+      value: '价格预估'
     },
-    data: {
-        showCon: false
-    },
-    methods: {
-        closePopup() {
+    show: {
+      type: Boolean,
+      value: false,
+      observer: function(d) {
+        if (d) {
+          this.setData({
+            showBg:true
+          })
+          setTimeout(() => {
             this.setData({
-                showCon: false
+              showCon: true
             })
-            setTimeout(() => {
-                this.setData({
-                    show: false
-                })
-            }, 180)
+          }, 0)
+        } else {
+          this.closePopup()
         }
+      }
+    },
+  },
+  data: {
+    showCon: false,
+    showBg: false
+  },
+  methods: {
+    closePopup() {
+      this.triggerEvent('closeModel')
+      this.setData({
+        showCon: false
+      })
+      setTimeout(() => {
+        this.setData({
+          show: false,
+          showBg: false
+        })
+      }, 180)
     }
+  }
 })

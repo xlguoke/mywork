@@ -160,3 +160,40 @@
 .navbar-list .item .title{
     line-height:50rpx;
 }   
+
+
+.special-goods .item{
+  width:33.333333333333%;
+  height:auto;
+  border-right:1rpx solid #eee;
+  border-bottom:1rpx solid #eee;
+  text-align: center;
+  padding:20rpx;
+  box-sizing: border-box;
+}
+.special-goods .item .a-time{
+  text-align: right;
+  font-size:24rpx;
+  color:#ccc;
+  margin-bottom:14rpx;
+}
+.special-goods .item .goods-img{
+  height:190rpx;
+  width:190rpx;
+}
+.special-goods .item .price-box{
+  line-height:60rpx;
+}
+.special-goods .item .price-box .old{
+  font-size:24rpx;
+  color:#ccc;
+  text-decoration: line-through;
+  margin-left:16rpx;
+}
+.special-goods .item .panic-paying{
+  display: inline-block;
+  font-size:26rpx;
+  border:1rpx solid #fc5f5f;
+  border-radius:50rpx;
+  padding:6rpx 20rpx;
+}
